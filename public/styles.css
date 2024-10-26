@@ -1,0 +1,383 @@
+/* General body and section styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #333, #555);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Styling */
+nav {
+    padding: 0.5em 0;
+}
+
+nav a {
+    color: #fff;
+    padding: 0 1em;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd;
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+    padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+/* Logo Styling */
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 100px;
+    }
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 0.8em 2em;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section Preview */
+.about-preview {
+    background-color: #fff;
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+    border-radius: 8px;
+}
+
+/* Link Button Styling */
+.link-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1.5em;
+    color: #333;
+    background-color: #f4f4f4;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.link-button:hover {
+    color: #fff;
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.brand-gallery, .service-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.brand-gallery img, .service-gallery img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Animation effect */
+}
+
+.brand-gallery img:hover, .service-gallery img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+
+/* Services Overview Section */
+.services-overview {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.service-card {
+    flex: 1 1 calc(33% - 1em);
+    box-sizing: border-box;
+    max-width: 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card h4 {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Brand Partners Section */
+.brands-preview {
+    background-color: #fff;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em;
+}
+
+.brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.brand-logos img {
+    max-width: 150px;
+    height: auto;
+    padding: 10px;
+    filter: brightness(0.8);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em;
+}
+
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.testimonial-card {
+    flex: 1 1 calc(50% - 1em);
+    box-sizing: border-box;
+    max-width: 500px;
+    text-align: left;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1em;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+.testimonial-card h4 {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Call-to-Action Section */
+.cta {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 3em 1em;
+    margin-bottom: 2em;
+}
+
+.cta h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.cta p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em;
+}
+
+/* Social Media Section */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased space between form fields */
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slight rounding */
+    transition: border-color 0.3s; /* Border color transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Individual Social Icons */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slight enlargement on hover for icons */
+}
+
+/* Specific colors for different social media */
+.social-icon.facebook {
+    filter: brightness(0) invert(1);
+    background-color: #3b5998;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.social-icon.twitter {
+    filter: brightness(0) invert(1);
+    background-color: #1da1f2;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.social-icon.instagram {
+    filter: brightness(0) invert(1);
+    background: linear-gradient(45deg, #fd1d1d, #fcb045);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.social-icon.linkedin {
+    filter: brightness(0) invert(1);
+    background-color: #0077b5;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 calc(100% - 1em);
+    }
+
+    .testimonial-card {
+        flex: 1 1 calc(100% - 1em);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+}
